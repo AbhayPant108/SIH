@@ -7,7 +7,7 @@ import Records from './Records.jsx';
 import Awareness from './Awareness.jsx';
 import Contact from './Contact.jsx';
 import Login from './Login.jsx';
-import Signup from './Signup.jsx';
+import Signup from './SignUp.jsx';
 import About from './About.jsx';
 
 export default App
