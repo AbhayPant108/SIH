@@ -34,7 +34,7 @@ function Signup() {
         }
     }
     return (
-    <div className='w-lg p-10 m-auto shadow-2xl rounded-xl flex flex-wrap'>
+    <div className='sm:w-lg  p-10 m-auto shadow-2xl rounded-xl flex flex-wrap'>
             <h1 className='w-full text-center text-3xl mb-10 font-serif'>Create your account</h1>
             {error && (<p className='bg-red-500 border-red-50'>{error}</p>)}
             <form onSubmit={handleSubmit(handleLogin)} className='w-full space-y-5'>

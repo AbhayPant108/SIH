@@ -19,7 +19,7 @@ function Login() {
         if(data) {
             
             
-        const session = await axios.post('/api/login', data);
+        // const session = await axios.post('/api/login', data);
         if (session) {
             // const userData = await axios.get(`/api/users/${data.id}`);
             dispatch(login(userData));
@@ -35,7 +35,7 @@ function Login() {
     }
     }
   return (
-    <div className='w-lg p-10 shadow-2xl m-auto rounded-xl flex flex-wrap'>
+    <div className='w-1/2 md:w-lg p-10 shadow-2xl m-auto rounded-xl flex flex-wrap'>
         <h1 className='w-full text-center text-3xl mb-10 font-serif'>Login to your account</h1>
         <form onSubmit={handleSubmit(handleLogin)} className='w-full space-y-6'>
         <Input label="Email: "  type="email" placeholder="Enter email" {...register("email",{required: true})} />
@@ -45,9 +45,9 @@ function Login() {
         })} />
         <Btn type="submit" className={`mt-2 py-3 font-medium text-lg`}>Login</Btn>
         </form>
-        <p className='w-full mt-4 text-center'>Don't have an account?
+        <p className='w-full mt-4 text-xs text-center'>Don't have an account?
         
-        <Link className='text-blue-600' to={`/signup`}> Create account</Link>
+        <Link className='text-blue-600 inline text-sm ' to={`/signup`}> Create account</Link>
         
         </p>
     </div>

@@ -1,6 +1,7 @@
 import React , {useEffect} from 'react';
 import { Routes, Route, Outlet ,useLocation} from 'react-router-dom';
 import Layout from '../shared/Layout.jsx';
+import Container from '../components/Container.jsx';
 // import About from './About.jsx';
 
 
@@ -17,13 +18,17 @@ function App() {
 
 
   return (
-    <div className='min-h-screen flex items-center' >
-
+    
+    <div className='min-h-screen flex w-full items-center' >
+      <Container>
       {/* wil not flicker on reload but will if we click on Navlink or Link */}
     {!pages?(<Layout>
       <Outlet />
     </Layout>):(<Outlet />)}
+    </Container>
+
     </div>
+
 
 
   );

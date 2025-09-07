@@ -12,7 +12,7 @@ export default function Layout({ children }) {
   const [lang, setLang] = useState('en');
 
   return (
-    <div className='flex flex-col min-h-screen'>
+    <div className='flex flex-col w-full min-h-screen'>
       <Header />
 
 
