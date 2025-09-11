@@ -16,7 +16,7 @@ export default function Layout({ children }) {
       <Header />
 
 
-      <main className="container flex-grow max-w-screen " style={{ paddingTop: 20, paddingBottom: 20 }}>
+      <main className="container flex-grow w-full " style={{ paddingTop: 20, paddingBottom: 20 }}>
         {children}
       </main>
 

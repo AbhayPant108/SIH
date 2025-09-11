@@ -9,7 +9,7 @@ function Btn({
  {
 
   return (
-    <button className={`${className} cursor-pointer hover:bg-blue-600 bg-blue-500 text-white px-4 py-2 text-center rounded-md w-full cursor-pointer`} type={type} {...props}>{children}</button>
+    <button className={`${className} cursor-pointer hover:bg-blue-600 bg-blue-500 text-white  text-center rounded-md w-full`} type={type} {...props}>{children}</button>
   )
 }
 

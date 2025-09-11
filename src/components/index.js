@@ -6,9 +6,11 @@ import Signup from "./Signup";
 import Authenticated from "./Authenticated";
 import Header from './Header'
 import Footer from "./Footer";
+import Language from "./Language";
 
 export {
     Btn,
+    Language,
     Container,
     Input,
     Login,
